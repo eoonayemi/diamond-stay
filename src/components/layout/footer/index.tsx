@@ -17,7 +17,7 @@ import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
-  // const pathname = usePathname();
+  const pathname = usePathname();
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -44,7 +44,9 @@ const Footer = () => {
 
   return (
     <footer
-      className={`${"bg-background"} text-secondary-foreground pt-16 lg:pt-24`}
+      className={`${
+        pathname === "/" ? "bg-background" : "bg-zinc-50 dark:bg-zinc-900"
+      } text-secondary-foreground pt-16 lg:pt-24`}
     >
       <div className="xl:px-48 lg:px-20 sm:px-10 px-5">
         {/* Top Section: Branding, Nav, and Newsletter */}

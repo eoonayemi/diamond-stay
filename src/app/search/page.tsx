@@ -19,7 +19,7 @@ const SearchPage = () => {
 // We create a separate component to easily use searchParams
 const SearchPageContent = () => {
   return (
-    <main className="pb-8 pt-[130px]">
+    <main className="pb-32 pt-[130px]">
       <div className="xl:px-48 lg:px-20 sm:px-10 px-5">
         <div className="mb-10">
           <TopSearchBar />

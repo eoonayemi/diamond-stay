@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 const ExclusiveOffers = () => {
   return (
-    <section className="py-16 lg:py-24 bg-secondary">
+    <section className="py-16 lg:py-24 bg-zinc-50 dark:bg-zinc-900">
       <div className="xl:px-48 lg:px-20 sm:px-10 px-5">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">

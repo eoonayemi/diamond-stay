@@ -18,11 +18,11 @@ const NewsletterSection = () => {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-secondary">
+    <section className="py-16 lg:py-24 bg-zinc-50 dark:bg-zinc-900">
       {" "}
       {/* Use bg-secondary for alternating background */}
       <div className="xl:px-48 lg:px-20 sm:px-10 px-5">
-        <div className="bg-card dark:bg-card-dark text-center py-16 px-6 rounded-3xl shadow-xl max-w-4xl mx-auto">
+        <div className="bg-card text-center py-16 px-6 rounded-3xl shadow-xl dark:shadow-none max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-4">
             Stay Inspired
           </h2>
