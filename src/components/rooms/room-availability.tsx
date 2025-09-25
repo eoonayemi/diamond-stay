@@ -5,7 +5,7 @@ import { useState } from "react";
 import { DateRange } from "react-day-picker";
 import { addDays, format } from "date-fns";
 import { toast } from "sonner";
-import { Calendar as CalendarIcon, User, KeyRound } from "lucide-react";
+import { Calendar as CalendarIcon, KeyRound } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";

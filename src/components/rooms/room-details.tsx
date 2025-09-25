@@ -6,6 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { FaHouse, FaHeart } from "react-icons/fa6";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { PiSealCheckFill } from "react-icons/pi";
+import { IconType } from "react-icons/lib";
 
 // Define the Highlight type for clarity
 type Highlight = {
@@ -25,7 +26,7 @@ interface RoomDetailsProps {
 }
 
 // 2. Update the iconMap to use the react-icons components
-const iconMap: { [key: string]: React.ComponentType<any> } = {
+const iconMap: { [key: string]: IconType } = {
   Home: FaHouse,
   CheckCircle: PiSealCheckFill,
   MapPin: FaMapMarkerAlt,

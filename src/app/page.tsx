@@ -8,7 +8,6 @@ import {
   Testimonials,
 } from "@/components/layout";
 import { useScrollPosition } from "@/hooks";
-import Image from "next/image";
 
 export default function Home() {
   const scrollY = useScrollPosition();

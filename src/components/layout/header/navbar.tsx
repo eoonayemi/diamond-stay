@@ -1,5 +1,4 @@
 import { navLinks } from "@/lib/constants";
-import Link from "next/link";
 import React from "react";
 import { NavLink } from "./nav-link";
 

@@ -17,7 +17,7 @@ import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
