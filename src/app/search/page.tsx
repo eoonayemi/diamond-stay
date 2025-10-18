@@ -19,19 +19,20 @@ const SearchPage = () => {
 // We create a separate component to easily use searchParams
 const SearchPageContent = () => {
   return (
-    <main className="pb-32 pt-[130px]">
+    <main className="pb-32 pt-[80px]">
       <div className="xl:px-48 lg:px-20 sm:px-10 px-5">
-        <div className="mb-10">
+        <div className="gap-5 xl:px-48 lg:px-20 sm:px-10 px-5 fixed z-30 flex flex-col bg-background pt-5 w-full inset-x-0">
           <TopSearchBar />
+          <Separator />
         </div>
-        <Separator className="mb-8" />
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-1">
+
+        <div className="pt-32">
+          {/* <div className="lg:col-span-1">
             <FilterSidebar />
-          </div>
-          <div className="lg:col-span-2">
-            <SearchResults />
-          </div>
+          </div> */}
+          {/* <div className=""> */}
+          <SearchResults />
+          {/* </div> */}
         </div>
       </div>
     </main>

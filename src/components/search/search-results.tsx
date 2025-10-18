@@ -16,11 +16,11 @@ const SearchResults = () => {
   const searchResults = hotels;
 
   return (
-    <div>
+    <div className="w-full">
       <p className="text-lg font-medium mb-4">
         Over {searchResults.length} homes
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-8 w-full">
         {searchResults.map((hotel) => (
           <HotelCard key={hotel.id} hotel={hotel} />
         ))}

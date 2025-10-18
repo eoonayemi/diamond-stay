@@ -17,6 +17,7 @@ const Header = () => {
 
   // 3. Determine the header's state based on page and scroll position
   const isHomePage = pathname === "/";
+  const isSearchPage = pathname === "/search";
   const isScrolled = scrollY > 2;
   const isTransparent = isHomePage && !isScrolled;
 
@@ -25,8 +26,10 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 py-4 xl:px-48 lg:px-20 sm:px-10 px-5 flex justify-between items-center h-[80px] ${
-        !isTransparent && // Apply solid background and shadow if NOT transparent
-        "bg-clip-padding backdrop-filter backdrop-blur-sm bg-background/80 h-[85px] shadow-md"
+        isSearchPage
+          ? "bg-background"
+          : !isTransparent &&
+            "bg-clip-padding backdrop-filter backdrop-blur-sm bg-background/80 h-[85px] shadow-md"
       } transition-all duration-300`}
     >
       <div className="flex items-center gap-2">

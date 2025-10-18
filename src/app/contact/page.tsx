@@ -38,7 +38,7 @@ const ContactPage = () => {
   return (
     <main className="bg-secondary">
       {/* Section 1: Contact Info and Form */}
-      <section className="py-16 lg:pb-24 lg:pt-40 bg-background">
+      <section className="py-20 lg:py-24 bg-background">
         {" "}
         {/* Changed background to white for contrast */}
         <div className="xl:px-48 lg:px-20 sm:px-10 px-5 grid grid-cols-1 lg:grid-cols-[1fr_0.8fr] gap-16 items-start">
